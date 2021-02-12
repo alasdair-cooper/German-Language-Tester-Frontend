@@ -1,0 +1,400 @@
+swagger: "2.0"
+info:
+  description: This is the documentation for the API of a single page web app for Year 1 Programming Coursework 2.
+  version: 1.0.0
+  title: Hilfreich Sache
+  contact:
+    email: alasdair.code@hotmail.com
+  license:
+    name: GNU
+    url: https://www.gnu.org/licenses/gpl-3.0.en.html
+tags:
+- name: admin
+  description: Admin data
+- name: define
+  description: Wiktionary relay
+- name: translate
+  description: Translates text
+- name: data
+  description: Language content
+- name: scripts
+  description: JS and CSS scripts
+- name: users
+  description: User data
+schemes: 
+- https
+paths:
+  /admin/users:
+    get:
+      tags:
+      - admin
+      summary: Fetches all users
+      description: Requests all the users in JSON format from Azure.
+      produces: 
+      - application/json
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      - name: ApiAdminKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+        403:
+          description: Admin key or access key is invalid
+        405:
+          description: Admin key or access key is the wrong type
+        500:
+          description: Internal server error
+  /admin/sessions:
+    get:
+      tags:
+      - admin
+      summary: Fetches all sessions
+      description: Requests all the users in JSON fromat from Azure.
+      produces: 
+      - application/json
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      - name: ApiAdminKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+        403:
+          description: Admin key or access key is invalid
+        405:
+          description: Admin key or access key is the wrong type
+        500:
+          description: Internal server error
+  /define:
+    get:
+      tags:
+      - define
+      summary: Fetches Wiktionary page
+      description: Requests full HTML page from Wiktionary and formats to return section specified by the chosen language in the request query.
+      produces:
+      - application/json
+      parameters:
+      - name: text
+        description: Text to define
+        required: true
+        in: query
+        type: string
+      - name: lang
+        description: Language to return
+        required: true
+        in: query
+        type: string
+      responses:
+        200:
+          description: OK
+        500:
+          description: Internal server error
+  /translate:
+    get:
+      tags:
+      - translate
+      summary: Translates text
+      description: Requests translation between two languages from Azure.
+      produces:
+      - application/json
+      parameters:
+      - name: text
+        description: Text to translate
+        required: true
+        in: query
+        type: string
+      - name: from
+        description: Language to translate from
+        required: true
+        in: query
+        type: string
+      - name: to
+        description: Language to translate to
+        required: true
+        in: query
+        type: string
+      responses:
+        200:
+          description: OK
+        403:
+          description: Access key invalid
+  /data/chapters:
+    get:
+      tags:
+      - data
+      summary: Returns the number of each chapter with a word count
+      description: If online, fetches the chapters from Azure, else gets the chapter and the word count from a locally stored JSON file.
+      produces:
+      - application/json
+      parameters:
+      - name: book
+        description: Book to fetch chapters of
+        required: true
+        in: query
+        type: string
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+        400:
+          description: Invalid input
+        403:
+          description: Access key is null or incorrect
+        500:
+          description: Internal server error
+  /data/words:
+    get:
+      tags:
+      - data
+      summary: Returns all the words in a chapter
+      description: If online, fetches the words from Azure as JSON, else gets the worss from a locally stored JSON file.
+      produces:
+      - application/json
+      parameters:
+      - name: book
+        description: Book to fetch words of
+        required: true
+        in: query
+        type: string
+      - name: chapter
+        description: Chapter to fetch words of
+        required: true
+        in: query
+        type: string
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+        400:
+          description: Invalid input
+        403:
+          description: Access key is null or incorrect
+        500:
+          description: Internal server error
+  /scripts/bootstrap.min.js:
+    get:
+      tags:
+      - scripts
+      summary: Gets Bootstrap JS file
+      description: Returns the Bootstrap min.js file from the node_modules. 
+      produces:
+      - application/octet-stream
+      responses:
+        200:
+          description: OK
+  /scripts/bootstrap.min.css:
+    get:
+      tags:
+      - scripts
+      summary: Gets Bootstrap CSS file
+      description: Returns the Bootstrap min.css file from the node_modules. 
+      produces:
+      - application/octet-stream
+      responses:
+        200:
+          description: OK
+  /scripts/popper.min.js:
+    get:
+      tags:
+      - scripts
+      summary: Gets Popper JS file
+      description: Returns the Popper min.js file from the node_modules. 
+      produces:
+      - application/octet-stream
+      responses:
+        200:
+          description: OK
+  /scripts/jquery.min.js:
+    get:
+      tags:
+      - scripts
+      summary: Gets Jquery JS file
+      description: Returns the Jquery min.js file from the node_modules. 
+      produces:
+      - application/octet-stream
+      responses:
+        200:
+          description: OK
+  /users/create:
+    post:
+      tags:
+      - users
+      summary: Initialises a new user
+      description: Sends credentials to be checked and added to the user database. Creates a new score file and sends it to be stored. Returns a new session key if successful. 
+      produces:
+      - application/json
+      parameters:
+      - name: userCredentials
+        description: User credentials
+        required: true
+        in: body
+        schema:
+            $ref: '#/definitions/Credentials'
+      responses:
+        200:
+          description: OK
+        403:
+          description: User credentials are unavailable for creation
+        500:
+          description: Internal server error
+  /users/login:
+    post:
+      tags:
+      - users
+      summary: Gets a session key
+      description: Sends credentials to be checked and returns a new session key if they are valid.
+      produces:
+      - application/json
+      parameters:
+      - name: userCredentials
+        description: User credentials
+        required: true
+        in: body
+        schema:
+          $ref: '#/definitions/Credentials'
+      responses:
+        200:
+          description: OK
+        500:
+          description: Internal server error
+  /users/score/download:
+    get:
+      tags:
+      - users
+      summary: Fetches a user's score file
+      description: GETs the user's file from Azure, or returns an empty one if Azure is down or there is no internet connection.
+      produces:
+      - application/octet-stream
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+        403:
+          description: Access key is null or incorrect
+        500:
+          description: Internal server error
+  /users/icon/download:
+    get:
+      tags:
+      - users
+      summary: Fetches a user's icon picture
+      description: GETs the user's icon picture from Azure, or returns the default if Azure is down or there is no internet connection.
+      produces:
+      - application/octet-stream
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      responses:
+        200:
+          description: OK
+  /users/score/upload:
+    post:
+      tags:
+      - users
+      summary: POSTs a user's score file
+      description: POSTs the user's file to Azure.
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      - name: body
+        description: User file as JSON
+        required: true
+        in: body
+        schema:
+          $ref: '#/definitions/UserFile'
+      responses:
+        200:
+          description: OK
+        403:
+          description: Access key is null or incorrect
+        500:
+          description: Internal server error
+  /users/icon/upload:
+    post:
+      tags:
+      - users
+      summary: POSTs the user's icon
+      description: POSTs the user's icon image to Azure.
+      parameters:
+      - name: ApiAccessKey
+        description: Authorization key for the Azure API
+        required: true
+        in: header
+        type: integer
+        format: int32
+      - name: body
+        description: User's icon
+        required: true
+        in: body
+        schema:
+            $ref: '#/definitions/File'
+      responses:
+        200:
+          description: OK
+        403:
+          description: Access key is null or incorrect
+        500:
+          description: Internal server error
+
+definitions:
+  Credentials:
+    type: object
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+  UserFile:
+    type: object
+    properties:
+      retention:
+        type: object
+      scores:
+        type: object
+      settings:
+        type: object
+  File:
+    type: file

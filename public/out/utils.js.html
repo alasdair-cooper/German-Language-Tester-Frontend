@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: utils.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: utils.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+class Utils {
+  /**
+   * Hides a modal of the given selector.
+   * @param {string} selector HTML selector (id, class, tag etc.)
+   */
+  static HideModal (selector) {
+    // JQuery as there is no neat way to do this with pure JS
+    $(selector).modal('hide');
+  }
+
+   /**
+   * Shows a modal of the given selector.
+   * @param {string} selector HTML selector (id, class, tag etc.)
+   */
+  static ShowModal (selector) {
+    $(selector).modal('show');
+  }
+
+  /**
+   * Checks that a nested element exists in the provided JSON at JSON[keys[0]][keys[1]]..[keys[n-1]][keys[n]] where n is the length of keys. Returns true if the element exists.
+   * @param {JSON} base JSON dictionary structure.
+   * @param {Array} keys Array containing keys to check exist.
+   */
+  static KeyExists (base, keys) {
+    let json = base;
+
+    let x = 0;
+    while (x &lt; keys.length) {
+      if (!(keys[x] in json)) {
+        return (false);
+      } else {
+        json = json[keys[x]];
+        x = x + 1;
+      }
+    }
+    return (true);
+  }
+
+  /**
+   * Returns an awaitable promise for the "click" event of an element.
+   * @param {Element} button HTML element to wait for "click" event on.
+   */
+  static Click (button) {
+    return new Promise(resolve => {
+      button.addEventListener('click', resolve);
+    });
+  }
+
+  /**
+   * Returns an awaitable promise for the "transitionend" event of an element.
+   * @param {Element} element HTML element to wait for "transitionend" event on.
+   */
+  static TransitionFinished (element) {
+    return new Promise(resolve => {
+      element.addEventListener('transitionend', resolve);
+    });
+  }
+
+  /**
+   * Returns an awaitable promise for a set period of time.
+   * @param {int} ms Time in milliseconds to wait for.
+   */
+  static Timeout (ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  /**
+   * Randomly shuffles array using Math.random.
+   * @param {Array} array An array to randomly shuffle
+   */
+  static ShuffleArray (array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+
+    return (array);
+  }
+
+  /**
+   * Hides all the children of a specific element on the document.
+   * @param {string} selector HTML selector of the element of whose children to hide.
+   */
+  static HideAll (selector) {
+    const selection = document.querySelector(selector);
+    for (let index = 0; index &lt; selection.children.length; index++) {
+      selection.children[index].hidden = true;
+    }
+  }
+
+  /**
+   * POSTs a given blob to the server if the sessionKey is valid. If the server is down then the connection lost page is displayed and if the session key is invalid, the session expired page is shown instead.
+   * @param {Blob} blob Blob of image to upload.
+   * @param {int} sessionKey ApiAccessKey to authorize upload to server.
+   */
+  static async UploadIcon (blob, sessionKey) {
+    await fetch('http://localhost:3000/users/icon/upload', {
+      method: 'POST',
+      headers: {
+        ApiAccessKey: sessionKey
+      },
+      body: blob
+    }).then(function (response) {
+      if (response.ok | response.status === 204) {
+        return (response.ok);
+      } else if (response.status === 403) {
+        Program.DisplaySessionExpired();
+        return (false);
+      } else {
+        Program.DisplayConnectionLost();
+        return (false);
+      }
+    });
+  }
+
+  /**
+   * GETs a given blob from the server if the sessionKey is valid. If the server is down then the connection lost page is displayed and if the session key is invalid, the session expired page is shown instead.
+   * @param {*} sessionKey ApiAccessKey to authorize download from server.
+   */
+  static async DownloadIcon (sessionKey) {
+    const response = await fetch('http://localhost:3000/users/icon/download', {
+      method: 'GET',
+      headers: {
+        ApiAccessKey: sessionKey
+      }
+    });
+    if (response.ok) {
+      return (response.blob());
+    } else if (response.status === 204) {
+      return (null);
+    } else if (response.status === 403) {
+      Program.DisplaySessionExpired();
+      return (null);
+    } else {
+      Program.DisplayConnectionLost();
+      return (null);
+    }
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="modifiers.html">modifiers</a></li></ul><h3>Classes</h3><ul><li><a href="Login.html">Login</a></li><li><a href="Popper.html">Popper</a></li><li><a href="Program.html">Program</a></li></ul><h3>Global</h3><ul><li><a href="global.html#dataObject">dataObject</a></li><li><a href="global.html#ModifierFn">ModifierFn</a></li><li><a href="global.html#referenceObject">referenceObject</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 06 2020 13:04:22 GMT+0100 (British Summer Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

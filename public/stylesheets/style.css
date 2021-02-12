@@ -1,0 +1,103 @@
+.table {
+  cursor: pointer;
+}
+
+.navbar {
+  height: auto;
+  text-align: left;
+  padding: 0;
+}
+
+.navbar-collapse {
+  align-items: unset;
+  background-color: white;
+}
+
+/* .container {
+  padding-left: 0;
+  padding-right: 0;
+} */
+
+#icon {
+  width: 90px;
+  height: 90px;
+  background-image: url("../images/Llanguage Llama.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: 1px solid lightgray;
+  border-radius: 60px;
+
+  transition: border-color 0.3s;
+  cursor: pointer;
+
+  margin: 10px 10px 10px 10px;
+}
+
+#icon:hover {
+  border-color: rgb(0, 0, 0);
+}
+
+.input-group,
+.btn-group {
+  width: auto;
+}
+
+.mr-auto,
+.ml-auto * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn-outline-dark {
+  border-color: lightgray;
+}
+
+.btn {
+  width: 100px;
+}
+
+.translate-dropdown {
+  background-color: #E5E5E5;
+  border-color: lightgray;
+  border-radius: .25rem 0px 0px .25rem;
+  border-right: none;
+  color: #495057;
+  padding: 0;
+}
+
+.navbar-toggler {
+  margin: 10px 10px 10px 10px;
+}
+
+#navbarSupportedContent {
+  padding-top: 10px;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+#account-icon {
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: white;
+}

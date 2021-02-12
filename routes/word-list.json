@@ -1,0 +1,1209 @@
+{
+  "A1": {
+    "1": {
+      "word_count": 148,
+      "words": [
+        {
+          "german_id": 1,
+          "german_english": "the letter",
+          "german_translation": "der Buchstabe",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Hallo"
+        },
+        {
+          "german_id": 2,
+          "german_english": "the reunion",
+          "german_translation": "das Wiedersehen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Hallo"
+        },
+        {
+          "german_id": 3,
+          "german_english": "to spell",
+          "german_translation": "buchstabieren",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Hallo"
+        },
+        {
+          "german_id": 4,
+          "german_english": "welcome",
+          "german_translation": "willkommen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Hallo"
+        },
+        {
+          "german_id": 5,
+          "german_english": "Goodbye!",
+          "german_translation": "Auf Wiedersehen!",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Hallo"
+        },
+        {
+          "german_id": 6,
+          "german_english": "the vending machine",
+          "german_translation": "der Automat",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 7,
+          "german_english": "the baby",
+          "german_translation": "das Baby",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 8,
+          "german_english": "the banana",
+          "german_translation": "die Banane",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 9,
+          "german_english": "the computer",
+          "german_translation": "der Computer",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 10,
+          "german_english": "the film",
+          "german_translation": "der Film",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 11,
+          "german_english": "the photo",
+          "german_translation": "das Foto",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 12,
+          "german_english": "the cash machine",
+          "german_translation": "der Geldautomat",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 13,
+          "german_english": "the gitar",
+          "german_translation": "die Gitarre",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 14,
+          "german_english": "the hotel",
+          "german_translation": "das Hotel",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 15,
+          "german_english": "the internet",
+          "german_translation": "das Internet",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 16,
+          "german_english": "the coffee",
+          "german_translation": "der Kaffee",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 17,
+          "german_english": "the museum",
+          "german_translation": "das Museum",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 18,
+          "german_english": "the post office",
+          "german_translation": "die Post",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 19,
+          "german_english": "the radio",
+          "german_translation": "das Radio",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 20,
+          "german_english": "the SMS",
+          "german_translation": "die SMS",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 21,
+          "german_english": "the taxi",
+          "german_translation": "das Taxi",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 22,
+          "german_english": "the telephone",
+          "german_translation": "das Telefon",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 23,
+          "german_english": "the university",
+          "german_translation": "die Universität",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 24,
+          "german_english": "the word",
+          "german_translation": "das Wort",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 25,
+          "german_english": "German",
+          "german_translation": "deutsch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 26,
+          "german_english": "international",
+          "german_translation": "international",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 27,
+          "german_english": "Hello.",
+          "german_translation": "Hallo.",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 28,
+          "german_english": "I",
+          "german_translation": "ich",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 29,
+          "german_english": "super",
+          "german_translation": "super",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 30,
+          "german_english": "and",
+          "german_translation": "und",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "Einstiegsseite"
+        },
+        {
+          "german_id": 31,
+          "german_english": "the instance",
+          "german_translation": "das Beispiel",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 32,
+          "german_english": "the comic",
+          "german_translation": "der Comic",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 33,
+          "german_english": "the apology",
+          "german_translation": "die Enschuldigung",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 34,
+          "german_english": "the surname",
+          "german_translation": "der Familienname",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 35,
+          "german_english": "the lady",
+          "german_translation": "die Frau",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 36,
+          "german_english": "the gentleman",
+          "german_translation": "der Herr",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 37,
+          "german_english": "the name",
+          "german_translation": "der Name",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 38,
+          "german_english": "the part",
+          "german_translation": "der Teil",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 39,
+          "german_english": "the firstname",
+          "german_translation": "der Vorname",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 40,
+          "german_english": "to be called",
+          "german_translation": "heißen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 41,
+          "german_english": "to read",
+          "german_translation": "lesen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 42,
+          "german_english": "you",
+          "german_translation": "du",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 43,
+          "german_english": "here",
+          "german_translation": "hier",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 44,
+          "german_english": "you",
+          "german_translation": "Sie",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 45,
+          "german_english": "how",
+          "german_translation": "wie",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A1"
+        },
+        {
+          "german_id": 46,
+          "german_english": "the mobile phone",
+          "german_translation": "das Handy",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 47,
+          "german_english": "new",
+          "german_translation": "neu",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 48,
+          "german_english": "false",
+          "german_translation": "falsch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 49,
+          "german_english": "true",
+          "german_translation": "richtig",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 50,
+          "german_english": "important",
+          "german_translation": "wichtig",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 51,
+          "german_english": "eight",
+          "german_translation": "acht",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 52,
+          "german_english": "please",
+          "german_translation": "bitte",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 53,
+          "german_english": "then",
+          "german_translation": "dann",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 54,
+          "german_english": "three",
+          "german_translation": "drei",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 55,
+          "german_english": "one",
+          "german_translation": "eins",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 56,
+          "german_english": "five",
+          "german_translation": "fünf",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 57,
+          "german_english": "no",
+          "german_translation": "nein",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 58,
+          "german_english": "nine",
+          "german_translation": "neun",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 59,
+          "german_english": "six",
+          "german_translation": "sechs",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 60,
+          "german_english": "seven",
+          "german_translation": "sieben",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 61,
+          "german_english": "four",
+          "german_translation": "vier",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 62,
+          "german_english": "from",
+          "german_translation": "von",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 63,
+          "german_english": "two",
+          "german_translation": "zwei",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A2"
+        },
+        {
+          "german_id": 64,
+          "german_english": "the café",
+          "german_translation": "das Café",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 65,
+          "german_english": "Germany",
+          "german_translation": "Deutschland",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 66,
+          "german_english": "the hour",
+          "german_translation": "die Uhr",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 67,
+          "german_english": "to come",
+          "german_translation": "kommen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 68,
+          "german_english": "to compare",
+          "german_translation": "vergleichen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 69,
+          "german_english": "also",
+          "german_translation": "auch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 70,
+          "german_english": "from",
+          "german_translation": "aus",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 71,
+          "german_english": "they",
+          "german_translation": "ihr",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 72,
+          "german_english": "in",
+          "german_translation": "in",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 73,
+          "german_english": "not",
+          "german_translation": "nicht",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 74,
+          "german_english": "sie",
+          "german_translation": "she",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 75,
+          "german_english": "we",
+          "german_translation": "wir",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 76,
+          "german_english": "where from",
+          "german_translation": "woher",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "A3"
+        },
+        {
+          "german_id": 77,
+          "german_english": "the evening",
+          "german_translation": "der Abend",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 78,
+          "german_english": "the question",
+          "german_translation": "die Frage",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 79,
+          "german_english": "the midday",
+          "german_translation": "der Mittag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 80,
+          "german_english": "the morning",
+          "german_translation": "der Morgen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 81,
+          "german_english": "the afternoon",
+          "german_translation": "der Nachmittag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 82,
+          "german_english": "the night",
+          "german_translation": "die Nacht",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 83,
+          "german_english": "the morning",
+          "german_translation": "der Vormittag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 84,
+          "german_english": "time",
+          "german_translation": "spät",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 85,
+          "german_english": "eleven",
+          "german_translation": "elf",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 86,
+          "german_english": "it",
+          "german_translation": "es",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 87,
+          "german_english": "ten",
+          "german_translation": "zehn",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 88,
+          "german_english": "twelve",
+          "german_translation": "zwölf",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B1"
+        },
+        {
+          "german_id": 89,
+          "german_english": "the image",
+          "german_translation": "das Bild",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 90,
+          "german_english": "the Tuesday",
+          "german_translation": "der Dienstag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 91,
+          "german_english": "the Monday",
+          "german_translation": "der Montag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 92,
+          "german_english": "the spreadsheet",
+          "german_translation": "die Tabelle",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 93,
+          "german_english": "to believe",
+          "german_translation": "glauben",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 94,
+          "german_english": "to have",
+          "german_translation": "haben",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 95,
+          "german_english": "to be",
+          "german_translation": "sein",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 96,
+          "german_english": "free",
+          "german_translation": "frei",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 97,
+          "german_english": "but",
+          "german_translation": "aber",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 98,
+          "german_english": "at",
+          "german_translation": "am",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 99,
+          "german_english": "in the morning",
+          "german_translation": "am Morgen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 100,
+          "german_english": "since",
+          "german_translation": "da",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 101,
+          "german_english": "there",
+          "german_translation": "dort",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 102,
+          "german_english": "in the night",
+          "german_translation": "in der Nacht",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 103,
+          "german_english": "tomorrow",
+          "german_translation": "morgen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 104,
+          "german_english": "or",
+          "german_translation": "oder",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 105,
+          "german_english": "when",
+          "german_translation": "wann",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 106,
+          "german_english": "who",
+          "german_translation": "wer",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 107,
+          "german_english": "where",
+          "german_translation": "wo",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B2"
+        },
+        {
+          "german_id": 108,
+          "german_english": "the Thursday",
+          "german_translation": "der Donnerstag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 109,
+          "german_english": "the Friday",
+          "german_translation": "der Freitag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 110,
+          "german_english": "the Wednesday",
+          "german_translation": "der Mittwoch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 111,
+          "german_english": "the Saturday",
+          "german_translation": "der Samstag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 112,
+          "german_english": "the Sunday",
+          "german_translation": "der Sonntag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 113,
+          "german_english": "the weekday",
+          "german_translation": "der Wochentag",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 114,
+          "german_english": "to answer",
+          "german_translation": "antworten",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 115,
+          "german_english": "to question",
+          "german_translation": "fragen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 116,
+          "german_english": "today",
+          "german_translation": "heute",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 117,
+          "german_english": "what",
+          "german_translation": "was",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B3"
+        },
+        {
+          "german_id": 118,
+          "german_english": "yes",
+          "german_translation": "ja",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B4"
+        },
+        {
+          "german_id": 119,
+          "german_english": "unfortunately",
+          "german_translation": "leider",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "B4"
+        },
+        {
+          "german_id": 120,
+          "german_english": "the pencil",
+          "german_translation": "der Bleistift",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 121,
+          "german_english": "the book",
+          "german_translation": "das Buch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 122,
+          "german_english": "the CD",
+          "german_translation": "die CD",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 123,
+          "german_english": "the window",
+          "german_translation": "das Fenster",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 124,
+          "german_english": "the notebook",
+          "german_translation": "das Heft",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 125,
+          "german_english": "the pen",
+          "german_translation": "der Kugelschreiber",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 126,
+          "german_english": "the lamp",
+          "german_translation": "die Lampe",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 127,
+          "german_english": "the number",
+          "german_translation": "die Nummer",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 128,
+          "german_english": "the paper",
+          "german_translation": "das Papier",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 129,
+          "german_english": "the chair",
+          "german_translation": "der Stuhl",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 130,
+          "german_english": "the table",
+          "german_translation": "der Tisch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 131,
+          "german_english": "the",
+          "german_translation": "das",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 132,
+          "german_english": "the",
+          "german_translation": "der",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 133,
+          "german_english": "the",
+          "german_translation": "die",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 134,
+          "german_english": "one",
+          "german_translation": "man",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C1"
+        },
+        {
+          "german_id": 135,
+          "german_english": "to write",
+          "german_translation": "schreiben",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C2"
+        },
+        {
+          "german_id": 136,
+          "german_english": "because",
+          "german_translation": "denn",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C2"
+        },
+        {
+          "german_id": 137,
+          "german_english": "a",
+          "german_translation": "ein",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C2"
+        },
+        {
+          "german_id": 138,
+          "german_english": "the car",
+          "german_translation": "das Auto",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 139,
+          "german_english": "the bus",
+          "german_translation": "der Bus",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 140,
+          "german_english": "the hamburger",
+          "german_translation": "der Hamburger",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 141,
+          "german_english": "the pizza",
+          "german_translation": "die Pizza",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 142,
+          "german_english": "the police",
+          "german_translation": "die Polizei",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 143,
+          "german_english": "the sentence",
+          "german_translation": "der Satz",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 144,
+          "german_english": "the page",
+          "german_translation": "die Seite",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 145,
+          "german_english": "the WC",
+          "german_translation": "das WC",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 146,
+          "german_english": "to know",
+          "german_translation": "kennen",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 147,
+          "german_english": "yet",
+          "german_translation": "doch",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        },
+        {
+          "german_id": 148,
+          "german_english": "not",
+          "german_translation": "kein",
+          "german_book": "A1",
+          "german_chapter": 1,
+          "german_section": "C3"
+        }
+      ],
+      "chapter_last_updated": 1588767000065
+    },
+    "2": {
+      "word_count": 154,
+      "words": [],
+      "chapter_last_updated": 1588761709655
+    },
+    "3": {
+      "word_count": 137,
+      "words": [],
+      "chapter_last_updated": 1588761714776
+    },
+    "4": {
+      "word_count": 112,
+      "words": [],
+      "chapter_last_updated": 1588761838717
+    }
+  }
+}

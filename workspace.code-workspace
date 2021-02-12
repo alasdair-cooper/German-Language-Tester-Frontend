@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\login-register-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "prog-1920-cw-2"
+	}
+}

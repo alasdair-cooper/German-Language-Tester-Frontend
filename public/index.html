@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script language="javascript" src="/scripts/jquery.min.js"></script>
+    <script language="javascript" src="/scripts/popper.min.js"></script>
+    <script language="javascript" src="/scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/scripts/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/swagger/swagger-ui.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <script src="./javascripts/utils.js"></script>
+    <script src="./javascripts/scores.js"></script>
+    <script src="./javascripts/program.js"></script>
+    <script src="javascripts/login.js" ></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/login-register.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+
+    <title>Hilfreiche Sache</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+        <div id="icon"></div>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse w-750" id="navbarSupportedContent" aria-expanded="true">
+  
+          <ul class="navbar-nav mr-auto mb-3">
+            <li class="nav-item active">
+              <div class="btn-group post-login" hidden>
+                <button id="dashboard-button" type="button" class="btn btn-outline-dark">Dashboard</button>
+                <button id="account-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#settings-pop-up">
+                  Account
+                </button>
+                <button id="account-icon" type="button" class="btn btn-outline-dark"></button>
+              </div>
+              <div class="btn-group pre-login">
+                <button id="navbar-login-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#login-modal">
+                  Login
+                </button>
+              </div>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav ml-auto post-login" hidden>
+  
+            <li class="nav-item btn-group mb-3">
+              <select class="form-control selcls" id="navbar-mode-select">
+                <option value="1" selected>Translate</option>
+                <option value="2">Define</option>
+              </select>
+            </li>
+  
+            <li class="nav-item input-group mb-3" id="navbar-input-01">
+              <select class="input-small translate-dropdown" id="navbar-language-select-01">
+                <option value="1" selected>EN</option>
+                <option value="2">DE</option>
+              </select>
+              <input id="navbar-input-01-input" type="text" class="form-control" placeholder="Enter text">
+            </li>
+  
+            <li class="nav-item input-group mb-3" id="navbar-input-02">
+              <select class="input-small translate-dropdown" id="navbar-language-select-02">
+                <option value="1">EN</option>
+                <option value="2" selected>DE</option>
+              </select>
+              <input id="navbar-input-02-input" type="text" class="form-control" placeholder="Translation">
+            </li>
+  
+            <li class="nav-item btn-group mb-3">
+              <button id="navbar-go-button" type="button" class="btn btn-outline-success">Go</button>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div id="definition-pop-up" class="modal fade" role="dialog">
+  
+          <div class="modal-dialog modal-lg">
+  
+            <div class="modal-content">
+  
+              <div class="modal-header">
+                <h4 class="modal-title" id="modal-title-text">No results</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+  
+              <div class="modal-body" id="modal-body-content">
+                <p id="modal-body-text"></p>
+              </div>
+  
+              <div class="modal-footer" id="modal-footer-content">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div id="settings-pop-up" class="modal fade" role="dialog">
+  
+          <div class="modal-dialog modal-lg">
+  
+            <div class="modal-content">
+  
+              <div class="modal-header">
+                <h4 class="modal-title" id="settings-modal-title-text">Settings</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+  
+              <div class="modal-body" id="settings-modal-body-content">
+                  <button id="settings-logout-button" type="button" class="btn btn-outline-danger mb-3">Logout</button>
+                <h4>User Settings</h4>
+                <div class="container">
+                  <form class="form-group">
+                    <label for="settings-user-icon-input">Choose an image:</label>
+                    <input class="form-control-file mb-3" type="file" id="settings-user-icon-input">
+                    <button id="settings-upload-button" type="button" class="btn btn-outline-success mb-3">Upload</button>
+                  </form>
+                </div>
+                <h4>Admin</h4>
+                <div id="admin-settings" class="container">
+                  <div id="pre-admin">
+                    <form class="form-group">
+                      <input id="admin-key-input" type="text" class="form-control mb-3" placeholder="Admin Key">
+                      <button id="admin-submit-button" type="button" class="btn btn-outline-success">Submit</button>
+                    </form>
+                  </div>
+                  <div id="post-admin" hidden>
+                    <table class="table table-hover" id="user-table">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Email</th>
+                          <th>Created</th>
+                        </tr>
+                      </thead>
+                      <tbody id="user-table-body">
+                      </tbody>
+                    </table>
+                    <table class="table table-hover" id="session-table">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Start Time</th>
+                          <th>End Time</th>
+                          <th>Expired</th>
+                          <th>User ID</th>
+                        </tr>
+                      </thead>
+                      <tbody id="session-table-body">
+                      </tbody>
+                    </table>
+                  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="modal-footer" id="modal-footer-content">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+  
+        <div class="modal fade login" id="login-modal" role="dialog">
+          <div class="modal-dialog login animated" id="login-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                        <h4 class="modal-title" id="login-modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box">
+                          <div class="error" id="login-error"></div>
+                          <div id="login-box" class="form login-box hide">
+                              <form id="login-form" method="" action="" accept-charset="UTF-8">
+                                <input id="login-email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="login-password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="login-confirm" class="btn btn-default btn-login" type="button" value="Login">
+                              </form>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="error" id="sign-up-error"></div>
+                          <div id="register-box" class="form content register-box hide" style="display: none;">
+                            <form id="sign-up-form" method="" action="" accept-charset="UTF-8">
+                              <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                              <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                              <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                              <input id="sign-up-confirm" class="btn btn-default btn-register" type="button" value="Create account">
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div id="login-footer" class="forgot login-footer hide">
+                            <span>Looking to
+                                 <a id="login-modal-sign-up-button" href="#">create an account</a>
+                            ?</span>
+                        </div>
+                        <div id="register-footer" class="forgot register-footer hide" style="display: none;">
+                             <span>Already have an account?</span>
+                             <a id="login-modal-login-button" href="#">Login</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <script src="./javascripts/listeners/login modal.js"></script>
+  
+      </nav>
+      <script src="./javascripts/listeners/navbar.js"></script>
+
+      <div class="error" id="conn-error" hidden></div>
+
+    </header>
+      <div id="main-body-content" class="container">
+
+        <div id="swagger-ui" hidden>
+          <script src="/swagger/swagger-ui-bundle.js"></script>
+          <script src="/swagger/swagger-ui-standalone-preset.js"></script>
+
+          <script>
+          window.onload = function() {
+            const ui = SwaggerUIBundle({
+              url: "/swagger.json",
+              dom_id: '#swagger-ui',
+              presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+              ]
+            })
+
+            window.ui = ui
+          }
+          </script>
+        </div>
+
+        <div id="chapter-view" hidden>
+
+          <table class="table table-hover" id="chapter-table">
+            <thead>
+              <!-- <tr>
+                          <th>Chapter</th>
+                          <th>Number of Words</th>
+                      </tr> -->
+            </thead>
+            <tbody id="chapter-table-body">
+
+            </tbody>
+          </table>
+
+        </div>
+
+        <div id="word-view" hidden>
+
+          <table class="table table-hover" id="word-table">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>German</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="word-table-body">
+
+            </tbody>
+          </table>
+
+        </div>
+
+        <div id="login-view" hidden>
+
+          <div class="container" style="text-align: center;">
+
+            <button id="login-view-login-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#login-modal">
+              Login
+            </button>
+            
+            <button id="login-view-sign-up-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#login-modal">
+              Sign up
+            
+            </button>
+          
+          </div>
+
+        </div>
+
+        <div id="session-expired-view" hidden>
+          <div class="jumbotron" style="text-align: center;">
+            <h1>Session expired</h1>
+          </div>
+          <div class="container" style="text-align: center;">
+
+            <button id="login-view-login-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#login-modal">
+              Login
+            </button>
+            
+            <button id="login-view-sign-up-button" type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#login-modal">
+              Sign up
+            
+            </button>
+          
+          </div>
+        </div>
+
+        <div id="no-connection-view" hidden>
+          <div class="jumbotron" style="text-align: center;">
+            <h1>Lost connection to server</h1>
+          </div>
+          <div class="container" style="text-align: center;">
+        
+          </div>
+        </div>
+
+        <div id="test-start-view" style="text-align: center;" hidden>
+
+          <button id="test-start-button" type="button" class="btn btn-primary">Start Test</button>
+
+        </div>
+
+        <div id="test-view" hidden>
+          
+          <div class="container">
+          
+            <div class="row" style="text-align: center;">
+          
+              <div class="container" style="text-align: center;">
+          
+                <br>
+                <h4 id="test-question"></h4>
+                <br>
+          
+              </div>
+          
+            </div>
+          
+            <div class="row">
+          
+              <div class="container" style="text-align: center;">
+          
+                <textarea id="test-answer"></textarea>
+          
+              </div>
+          
+            </div>
+          
+            <div class="row" >
+          
+              <div class="container" style="text-align: center;">
+          
+                <br>
+                <div class="error" id="test-error"></div>
+                <br>
+          
+                <button id="test-confirm-button" type="button" class="btn btn-primary">Submit</button>
+                <button id="test-return-button" type="button" class="btn btn-primary" hidden>Return</button>
+          
+                <br>
+          
+              </div>
+          
+            </div>
+          
+          </div>
+        
+        </div>
+
+        <template id="template-row">
+
+          <tr>
+            <td class="record"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        
+        </template>
+
+        <template id="template-header">
+        
+          <tr>
+            <th class="record" colspan="2"></th>
+            <th>
+              <button type="button" class="btn btn-primary">Test</button>
+            </th>
+        
+          </tr>
+    
+        </template>
+
+        <template id="session-template-row">
+
+          <tr>
+            <td class="record"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        
+        </template>
+
+        <template id="user-template-row">
+
+          <tr>
+            <td class="record"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        
+        </template>
+
+      </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <span class="text-muted">
+          ttnt59 - 
+          <a href="#" id="api-docs-link">api</a> - 
+          <a href="./out/index.html" id="docs-link">docs</a>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+  <script src="javascripts/listeners/body.js" onload="Program.Main()"></script>
+
+</html>
